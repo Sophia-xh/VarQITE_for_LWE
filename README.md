@@ -135,5 +135,8 @@ Released under the MIT License. See `LICENSE`.
 
 ## Citation
 
-If you use this repository, please cite the associated paper and archived
-release. Citation information will be updated once available.
+The source code and experimental data associated with this work are archived on Zenodo:
+
+**DOI:** https://doi.org/10.5281/zenodo.22768408
+
+If you use this repository, please cite the associated paper and this archived release.
