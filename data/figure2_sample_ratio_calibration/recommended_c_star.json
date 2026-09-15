@@ -1,0 +1,25 @@
+{
+  "main_threshold": 0.5,
+  "recommended_c_star_median": 1.3250000000000002,
+  "recommended_c_star_mean": 1.3785714285714286,
+  "num_valid_n": 14,
+  "valid_n_list": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "min_c": 1.2,
+  "max_c": 1.8,
+  "message": "建议先优先参考 recommended_c_star_median。若后续主实验想保守一点，可取略大于 median 的值。"
+}

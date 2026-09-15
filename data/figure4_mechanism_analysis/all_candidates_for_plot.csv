@@ -1,0 +1,25 @@
+﻿plot_group,source,candidate_id,delta,energy,lwe_prior_score,count,secret_success,is_selected,is_primary,is_energy_min
+Babai,Babai,babai,"[0, 0, 0, 0, 0, 0, 0, 0]",3.0,,,False,False,False,False
+Greedy final,Greedy local descent,greedy_final,"[0, 0, 0, 0, 0, 0, 0, 0]",3.0,,,False,False,False,False
+Exhaustive local enumeration,Exhaustive local enumeration,exact,"[0, 1, 0, 0, 0, 0, 1, 0]",2.0,,,False,False,False,True
+Greedy-traj. candidates,Greedy-traj. candidates,0,"[0, 0, 0, 0, 0, 0, 0, 0]",3.0,6073.15,0.0,False,True,False,False
+VarQITE candidates,VarQITE candidates,0,"[0, 0, 0, 0, 0, 0, 0, 0]",3.0,6072.616246192029,207.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,1,"[0, 1, 0, 0, 0, 0, 0, 0]",4.0,5063.814985239829,46.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,2,"[0, 0, 0, 0, 1, 0, 0, 0]",6.0,4055.9193337510233,44.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,3,"[0, 0, 0, 0, 0, 0, 1, 0]",5.0,5074.909880261834,29.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,4,"[-1, 0, 0, 0, 0, 0, 0, 0]",3.0,5072.824190346198,25.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,5,"[0, 0, 0, 0, 0, -1, 0, 0]",7.0,7087.060962824211,17.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,6,"[0, 0, -1, 0, 0, 0, 0, 0]",6.0,6106.010962824211,17.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,7,"[0, 1, 0, 0, 0, 0, 1, 0]",2.0,5041.851509335022,11.0,False,False,True,False
+VarQITE candidates,VarQITE candidates,8,"[-1, 1, 0, 0, 0, 0, 0, 0]",6.0,6106.051509335021,11.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,9,"[0, 1, 0, 0, 1, 0, 0, 0]",3.0,12.919741490700595,9.0,True,True,False,False
+VarQITE candidates,VarQITE candidates,10,"[0, 0, 0, 0, 0, 0, 0, 1]",10.0,5120.280277542266,8.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,11,"[-1, 0, 0, 0, 0, 0, 1, 0]",5.0,5095.042055845832,7.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,12,"[0, 0, -1, 0, 1, 0, 0, 0]",5.0,5095.042055845832,7.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,13,"[-1, 0, 0, 0, 1, 0, 0, 0]",6.0,6076.092055845832,7.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,14,"[-1, 0, -1, 0, 0, 0, 0, 0]",6.0,5106.120824053078,5.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,15,"[0, 0, -1, 0, 0, 0, 1, 0]",8.0,7098.239056208757,4.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,16,"[0, 1, -1, 0, 0, 0, 0, 0]",11.0,8101.389056208757,4.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,17,"[0, 0, 0, 0, 0, -1, 1, 0]",13.0,9093.511370563887,3.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,18,"[0, 0, 0, 0, 1, 0, 1, 0]",14.0,9104.561370563888,3.0,False,False,False,False
+VarQITE candidates,VarQITE candidates,19,"[0, 0, 0, 0, 1, -1, 0, 0]",8.0,6098.261370563888,3.0,False,False,False,False

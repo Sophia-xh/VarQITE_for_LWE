@@ -1,0 +1,47 @@
+{
+  "q": 17,
+  "omega_list": [
+    0.5,
+    0.375
+  ],
+  "tau_list": [
+    0.125,
+    0.25
+  ],
+  "n_list": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "c_list": [
+    1.0,
+    1.25,
+    1.5,
+    1.75,
+    2.0,
+    2.25,
+    2.5,
+    2.75,
+    3.0
+  ],
+  "start_seed": 0,
+  "end_seed": 200,
+  "reduction_method": "lll",
+  "delta_lll": 0.75,
+  "success_threshold_list": [
+    0.5,
+    0.7,
+    0.8
+  ],
+  "tag": "babai_success_threshold"
+}

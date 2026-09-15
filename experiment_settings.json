@@ -1,0 +1,110 @@
+{
+  "_comment": [
+    "Human-readable summary of the experimental settings reported in the paper",
+    "'Variational quantum imaginary-time evolution for the learning with errors problem'.",
+    "This file does NOT replace the archived per-run config.json files, which remain the",
+    "authoritative record. Every value below was verified against the archived run configs",
+    "and/or the archived source code; the '_source' fields state where each block was verified."
+  ],
+
+  "lwe": {
+    "_source": "data/figure2_sample_ratio_calibration/config.json, data/figure3_performance_comparison/main_experiment/config.json",
+    "q": 17,
+    "omega": 0.5,
+    "tau": 0.25,
+    "c_star": 1.325,
+    "m_from_n": "m = ceil(c_star * n)",
+    "m_reported": {"3": 4, "4": 6, "5": 7, "6": 8, "7": 10, "8": 11, "9": 12},
+    "n_reported": [3, 4, 5, 6, 7, 8, 9],
+    "seeds": "0-99",
+    "num_seeds_per_dimension": 100,
+    "local_window": [-1, 0, 1],
+    "secret_distribution": "centered ternary, Pr(s_i=-1)=Pr(s_i=+1)=omega/2, Pr(s_i=0)=1-omega",
+    "noise_distribution": "centered ternary, Pr(e_j=-1)=Pr(e_j=+1)=tau/2, Pr(e_j=0)=1-tau",
+    "require_nonzero_secret": true,
+    "reduction_method": "lll",
+    "delta_lll": 0.75
+  },
+
+  "calibration": {
+    "_source": "data/figure2_sample_ratio_calibration/config.json and recommended_c_star.json",
+    "n_scanned": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+    "n_with_resolved_c50": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "c_grid": [1.2, 1.25, 1.3, 1.35, 1.4, 1.45, 1.5, 1.55, 1.6, 1.65, 1.7, 1.75, 1.8, 1.85, 1.9, 1.95, 2.0],
+    "seeds": "0-199",
+    "success_thresholds": [0.5, 0.7, 0.8],
+    "main_threshold": 0.5,
+    "recommended_c_star_median": 1.325,
+    "recommended_c_star_mean": 1.3785714285714286
+  },
+
+  "varqite_main": {
+    "_source": "data/figure3_performance_comparison/main_experiment/config.json, algorithms/solvers/quantum/qite/solver.py",
+    "ansatz": "single-layer Ry product ansatz",
+    "layers": 1,
+    "entangling_gates": false,
+    "num_qubits": "2m",
+    "num_parameters": "2m (layers * 2m)",
+    "encoding_penalty_lambda": 10.0,
+    "dtau": 0.02,
+    "updates": 5,
+    "candidate_top_k": 20,
+    "candidate_selection": "energy_lwe_prior",
+    "shots_A_C": 100,
+    "shots_E": 100,
+    "shots_decode": 500,
+    "regularization_ridge_floor": 0.1,
+    "max_parameter_step_norm": 0.05,
+    "auto_calibrate": false,
+    "simulator": "PyQPanda3 CPUQVM",
+    "theta_initialization": {
+      "_source": "algorithms/solvers/quantum/qite/solver.py calls build_ry_chain_ansatz_with_biased_init with these fixed values",
+      "scheme": "problem-structured biased initialization from h = D^T r_Babai",
+      "beta": 1.6,
+      "p_zero_floor": 0.02,
+      "p_bias_max": 0.22,
+      "later_layer_noise": 0.02,
+      "seed": 1234
+    }
+  },
+
+  "case_study": {
+    "_source": "data/figure4_mechanism_analysis/case_study_config.json",
+    "n": 6,
+    "m": 8,
+    "q": 17,
+    "seed": 1,
+    "updates": 30,
+    "layers": 1,
+    "dtau": 0.02,
+    "encoding_penalty_lambda": 10.0,
+    "shots_A_C": 100,
+    "shots_E": 100,
+    "shots_decode": 500,
+    "candidate_top_k": 20,
+    "_note": "All settings other than the number of updates (30 instead of 5) match varqite_main."
+  },
+
+  "reranking": {
+    "_source": "data/figure3_performance_comparison/main_experiment/config.json (candidate_rerank_config) and data/figure4_mechanism_analysis/case_study_config.json",
+    "lambda_s": 1000,
+    "lambda_e": 1000,
+    "lambda_omega_s": 20,
+    "lambda_tau_e": 10,
+    "lambda_e2": 1,
+    "lambda_E": 0.05,
+    "lambda_cnt": 0.1,
+    "expected_secret_weight_ratio": 0.5,
+    "expected_noise_rate": 0.25,
+    "energy_match_tol": 1e-09,
+    "tie_breaking": "lower local energy, then larger measurement count, then smaller correction norm"
+  },
+
+  "environment": {
+    "_source": "conda environment observed on the authoring machine; matplotlib version cross-checked against the Creator string embedded in the archived EPS files",
+    "python": "3.10.20",
+    "matplotlib": "3.10.8",
+    "pyqpanda3": "0.3.4",
+    "_note": "See requirements.txt and the Environment section of README.md; ARTIFACT_AUDIT.md records where requirements.txt and the observed environment disagree."
+  }
+}

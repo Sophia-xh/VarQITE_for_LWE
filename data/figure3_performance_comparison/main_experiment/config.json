@@ -1,0 +1,110 @@
+{
+  "n_start": 3,
+  "n_end": 10,
+  "n_step": 1,
+  "c_star": 1.325,
+  "m_rounding": "ceil",
+  "q": 17,
+  "start_seed": 0,
+  "end_seed": 100,
+  "secret_weight_total": 0.5,
+  "noise_error_rate": 0.25,
+  "require_nonzero_secret": true,
+  "reduction_method": "lll",
+  "delta_lll": 0.75,
+  "local_values": [
+    -1,
+    0,
+    1
+  ],
+  "greedy_max_steps": null,
+  "greedy_tol": 1e-12,
+  "penalty": 10.0,
+  "layers": 1,
+  "dtau": 0.02,
+  "steps": 5,
+  "shots_A_C": 100,
+  "shots_E": 100,
+  "shots_decode": 500,
+  "reg_floor": 0.1,
+  "max_delta_norm": 0.05,
+  "verbose_every": 1000,
+  "auto_calibrate": false,
+  "log_qite_steps": false,
+  "candidate_topk": 20,
+  "candidate_selection": "energy_lwe_prior",
+  "expected_secret_weight_ratio": 0.5,
+  "expected_noise_rate": 0.25,
+  "prior_weight_secret_violation": 1000.0,
+  "prior_weight_noise_violation": 1000.0,
+  "prior_weight_secret_weight_gap": 20.0,
+  "prior_weight_noise_weight_gap": 10.0,
+  "prior_weight_noise_l2": 1.0,
+  "prior_weight_local_energy": 0.05,
+  "prior_weight_count_log": 0.1,
+  "candidate_energy_match_tol": 1e-09,
+  "decoded_top_states_to_store": 10,
+  "energy_match_tol": 1e-12,
+  "max_workers": 5,
+  "parallel_chunksize": 2,
+  "mp_start_method": "spawn",
+  "flush_each_seed": true,
+  "tag": "scaling_candidate_lwe_prior_parallel",
+  "param_list_generated": [
+    {
+      "n": 3,
+      "m": 4,
+      "q": 17
+    },
+    {
+      "n": 4,
+      "m": 6,
+      "q": 17
+    },
+    {
+      "n": 5,
+      "m": 7,
+      "q": 17
+    },
+    {
+      "n": 6,
+      "m": 8,
+      "q": 17
+    },
+    {
+      "n": 7,
+      "m": 10,
+      "q": 17
+    },
+    {
+      "n": 8,
+      "m": 11,
+      "q": 17
+    },
+    {
+      "n": 9,
+      "m": 12,
+      "q": 17
+    },
+    {
+      "n": 10,
+      "m": 14,
+      "q": 17
+    }
+  ],
+  "candidate_rerank_config": {
+    "candidate_topk": 20,
+    "selection_mode": "energy_lwe_prior",
+    "expected_secret_weight_ratio": 0.5,
+    "expected_noise_rate": 0.25,
+    "prior_weight_secret_violation": 1000.0,
+    "prior_weight_noise_violation": 1000.0,
+    "prior_weight_secret_weight_gap": 20.0,
+    "prior_weight_noise_weight_gap": 10.0,
+    "prior_weight_noise_l2": 1.0,
+    "prior_weight_local_energy": 0.05,
+    "prior_weight_count_log": 0.1,
+    "energy_match_tol": 1e-09,
+    "decoded_top_states_to_store": 10
+  }
+}

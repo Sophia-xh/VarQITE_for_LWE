@@ -1,0 +1,113 @@
+{
+  "instance": {
+    "n": 6,
+    "m": 8,
+    "q": 17,
+    "seed": 1,
+    "s_true_centered": [
+      1,
+      0,
+      0,
+      0,
+      -1,
+      1
+    ],
+    "s_true_mod_q": [
+      1,
+      0,
+      0,
+      0,
+      16,
+      1
+    ],
+    "e_true": [
+      0,
+      -1,
+      0,
+      0,
+      0,
+      1,
+      -1,
+      0
+    ],
+    "c_centered": [
+      -7,
+      5,
+      3,
+      -4,
+      -1,
+      3,
+      -8,
+      -1
+    ]
+  },
+  "baseline_results": {
+    "babai_secret_success": false,
+    "initial_residual_energy": 3.0,
+    "greedy_secret_success": false,
+    "greedy_best_energy": 3.0,
+    "exact_skipped": false,
+    "exact_secret_success": false,
+    "exact_best_energy": 2.0
+  },
+  "varqite_results": {
+    "primary_delta": [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "primary_energy": 2.0,
+    "primary_secret_success": false,
+    "candidate_best_delta": [
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    "candidate_best_energy": 3.0,
+    "candidate_best_lwe_prior_score": 12.919741490700595,
+    "candidate_best_count": 9,
+    "candidate_best_secret_success": true,
+    "candidate_num_unique": 20,
+    "candidate_any_secret_success": true
+  },
+  "greedy_trajectory_rerank_results": {
+    "candidate_best_delta": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "candidate_best_energy": 3.0,
+    "candidate_best_lwe_prior_score": 6073.15,
+    "candidate_best_secret_success": false,
+    "candidate_topk_used": 1,
+    "candidate_any_secret_success": false
+  },
+  "timing_sec": {
+    "greedy": 3.804103471338749e-05,
+    "varqite": 15.993251333013177,
+    "varqite_rerank": 0.004424958024173975,
+    "greedy_trajectory_rerank": 0.00021900003775954247,
+    "total": 16.03997654200066
+  },
+  "geometry": {
+    "dist2_true_babai": 8,
+    "dist2_true_greedy": 8,
+    "dist2_true_varqite_best": 0,
+    "dist2_true_greedy_trajectory_best": 8
+  }
+}
